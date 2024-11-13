@@ -1,46 +1,91 @@
-# Getting Started with Create React App
+<p align="center">
+  <h1 align="center"><a href="https://ignite-dt-money.netlify.app/">DsMoney :rocket: </a></h1>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+Este é o resultado de um estudo aprofundado de React.js.
 
-### `npm start`
+___
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 💻 Sobre
+A ideia deste projeto é criar um controle financeiro para o usuário. Nele o usuário pode adicionar as entradas e saídas financeiras do seu dia-a-dia. É possível ainda utilizar o campo de busca da página para filtrar por itens ou categorias específicas.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Por "trás dos panos" o projeto apresenta diversas funcionalidades, fazendo uso do React Hook Form e Zod nos formulários e utilizando Context para facilitar o uso de variáveis. O projeto possuí ainda otimizações para evitar renderizações desnecessárias nos componentes.
 
-### `npm test`
+___
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎨 Layout
+A página em formato desktop é vista na imagem abaixo:
 
-### `npm run build`
+![Capa](https://user-images.githubusercontent.com/106932234/217977248-680d1f67-054b-4290-8bba-548154d18012.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+___
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠 Tecnologias
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+As seguintes tecnologias foram empregadas na criação deste projeto:
 
-### `npm run eject`
+- [ReactJs](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Styled Components](https://styled-components.com/)
+- [Zod](https://zod.dev/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+___
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀 Como utilizar
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Clone o projeto para o local desejado em seu computador.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+$ git clone git@github.com:andreviapiana/DTMoney.git
+```
+___
 
-## Learn More
+#### 🚧 Executando o Projeto
+```bash
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Navegue até o diretório
+$ cd DTMoney
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Instale as dependências necessárias
+$ npm install
+
+# Agora inicie o servidor do FrontEnd
+$ npm run dev
+
+# O terminal irá exibir o endereço local onde a aplicação está sendo executada. Basta digitar o mesmo endereço em seu navegador preferido. O endereço usado na criação do projeto foi este:
+
+  http://localhost:5173/
+```
+
+#### 🚧 Deseja Executar o BackEnd localmente?
+
+O BackEnd roda nativamente através do meu servidor JSON. Caso deseje rodar ele localmente em sua máquina, siga os passos:
+
+```bash
+
+# Navegue até o diretório
+
+# Abra o arquivo AXIOS.TS que está no diretório acima
+
+# Faça a inversão dos itens que ficam comentados, de modo que os endereços ficarão assim:
+baseURL: 'http://localhost:3000',
+
+# Então inicie o servidor do BackEnd
+$ npm run dev:server
+```
+
+___
+
+
+[O resultado FINAL pode ser visto aqui](https://dsmoney.vercel.app/)
+
+___
+
+
+Made with ❤️ by PhelipeG 👋🏽 [Get in Touch!](https://github.com/PhelipeG)
+
+---
